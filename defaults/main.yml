@@ -4,3 +4,6 @@
 
 s3cmdcfg_bucket: "{{ inventory_hostname }}"
 s3cmdcfg_bucket_location: 'EU'
+
+aws_access_key: redacted
+aws_secret_key: redacted
