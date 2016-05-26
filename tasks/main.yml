@@ -1,13 +1,11 @@
 ---
 # tasks file s3-config
 
+- include: setup-RedHat.yml
+  when: ansible_os_family == 'RedHat'
 
-- name: Install AW python dependencies
-  apt:
-    pkg: python-boto
-    state: present
-  sudo: true
-
+- include: setup-Debian.yml
+  when: ansible_os_family == 'Debian'
 
 - name: Create a bucket for the host on S3
   # Create a bucket with key as directory, in the Configured region

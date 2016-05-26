@@ -1,0 +1,8 @@
+---
+
+- name: Install AW python dependencies (Debian)
+  apt:
+    update_cache: yes
+    pkg: python-boto
+    state: present
+  sudo: true
