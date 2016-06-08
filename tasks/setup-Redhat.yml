@@ -5,4 +5,4 @@
     update_cache: yes
     name: python-boto
     state: present
-  sudo: true
+  become: true
