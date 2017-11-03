@@ -1,7 +1,7 @@
 ---
 # defaults file for s3-config
 
-
+s3_createdefaultbucket: true
 s3cmdcfg_bucket: "{{ inventory_hostname }}"
 s3cmdcfg_bucket_location: 'EU'
 
