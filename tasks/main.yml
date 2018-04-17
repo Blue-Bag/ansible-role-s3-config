@@ -9,7 +9,7 @@
 
 - name: Create a bucket for the host on S3
   # Create a bucket with key as directory, in the Configured region
-  s3:
+  aws_s3:
     bucket: "{{ s3cmd_bucket_name }}"
     mode: create
     region: "{{ s3cmd_bucket_region }}"
