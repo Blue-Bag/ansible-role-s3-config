@@ -7,3 +7,10 @@ s3cmdcfg_bucket_location: 'EU'
 
 aws_access_key: redacted
 aws_secret_key: redacted
+
+s3cfg_pkgs:
+  - python-setuptools
+  - python-dateutil
+  - python-magic
+  - python-boto3
+  - python-botocore

@@ -3,6 +3,7 @@
 - name: Install AW python dependencies (Debian)
   apt:
     update_cache: yes
-    pkg: python-boto
+    name: "{{ item }}"
     state: present
+  with_items: "{{ s3cfg_pkgs }}"
   become: true
