@@ -3,7 +3,6 @@
 - name: Install AW python dependencies (Debian)
   apt:
     update_cache: yes
-    name: "{{ item }}"
+    name: "{{ s3cfg_pkgs }}"
     state: present
-  with_items: "{{ s3cfg_pkgs }}"
   become: true
