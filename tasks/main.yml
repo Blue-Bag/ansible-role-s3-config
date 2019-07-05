@@ -15,4 +15,6 @@
     region: "{{ s3cmd_bucket_region }}"
     aws_access_key: "{{ aws_access_key }}"
     aws_secret_key: "{{ aws_secret_key }}"
+  become: false
+  delegate_to: localhost
   when: s3_createdefaultbucket
